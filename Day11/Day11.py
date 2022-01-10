@@ -1,6 +1,6 @@
 import copy
-
-with open('puzzleInput.txt') as pInput:
+import os,sys
+with open(os.path.join(sys.path[0], "puzzleInput.txt"), "r") as pInput:
   lines = pInput.readlines()
 cleanList = []
 for e in lines:
